@@ -11,6 +11,8 @@ router
 
 router.route("/favorite").get(contacts.findAllFavorite);
 
+router.route("/delete-all").delete(contacts.deleteAll);
+
 router
   .route("/:id")
   .get(contacts.findOne)
